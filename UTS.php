@@ -15,10 +15,10 @@
     <form method="post">
         <label for="nama">Nama Negara:</label>
         <select name="negara" id="negara">
-            <option value="Qatar U-23">Qatar U-23</option>
-            <option value="Indonesia U-23">Indonesia U-23</option>
-            <option value="Australia U-23">Australia U-23</option>
-            <option value="Yordania U-23">Yordania U-23</option>
+            <option value="Qatar U-23">Korea Selatan U-23</option>
+            <option value="Indonesia U-23">Jepang U-23</option>
+            <option value="Australia U-23">Tiongkok U-23</option>
+            <option value="Yordania U-23">Uni Emirat Arab U-23</option>
         </select>
         <br>
         <br>
@@ -80,13 +80,11 @@
 
         // Format data
         $data = "A\n";
-        $data .= "Data Group A Piala Asia Qatar U-23 Per " . date("d M Y H:i:s") . "\n";
+        $data .= "Data Group B Piala Asia Qatar U-23 Per " . date("d M Y H:i:s") . "\n";
         $data .= "Nama Operator/NIM: $operator/$nim\n\n";
-        // $data .= "Negara\t\tP\tM\tS\tK\tPoin\n";
-        // $data .= "1. $negara\t$pertandingan\t$menang\t$seri\t$kalah\t$points\n";
-
+=
         // Simpan data ke file
-        file_put_contents('data.txt', $data, FILE_APPEND | LOCK_EX);
+        file_put_contents('db.html', $data, FILE_APPEND | LOCK_EX);
         // Tampilkan output
         
         echo "<h3>Data telah disimpan:</h3>";
